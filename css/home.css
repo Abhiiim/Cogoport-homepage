@@ -591,3 +591,144 @@
 }
 
 
+/* Container 8 */
+
+.container-8 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.a-1 {
+    position: relative;
+    width: 100%;
+    /* height: 450px; */
+    cursor: pointer;
+}
+
+.a-3 {
+    width: 100%;
+}
+
+.play-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.4)
+}
+
+.a-2 {
+    background-color: #ee3425;;
+}
+
+.a-2 .card {
+    justify-content: space-between;
+}
+
+.a-4 {
+    padding: 25px 0;
+    color: #fff;
+}
+
+.a-4 h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+/* Container 9 */
+
+.container-9 .card {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs {
+    display: flex;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 10px;
+    margin-top: 0;
+    width: calc(calc(100% / 3) - 20px);
+    overflow: hidden;
+    text-align: start;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px hsla(0,0%,79%,.5);
+}
+
+.blog-img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: #fbdc00;
+    object-fit: cover;
+}
+
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 16px;
+}
+
+.b-1 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ee3425;
+}
+
+.b-2 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #000;
+    line-height: 1.5;
+}
+
+.blog-text p {
+    max-height: calc(1.4rem * 3);
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.b-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.b-3 span {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #ee3425;
+    cursor: pointer;
+}
+
+.b-3 h4 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #9a9a9a;
+}
+
+.b-4 {
+    color: #fff;
+    background-color: #ee3425;
+    border: 1px solid #ee3425;
+    height: 36px;
+    padding: 8px 42px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+
