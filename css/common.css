@@ -47,6 +47,12 @@ button {
     margin-right: auto;
 }
 
+@media (max-width: 767px) {
+    .card {
+        flex-direction: column;
+    }
+}
+
 
 .left-card {
     flex: 1 1;
