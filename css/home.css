@@ -510,6 +510,12 @@
     display: flex;
 }
 
+@media screen and (max-width: 767px) {
+    .bottom-layer {
+        flex-direction: column;
+    }
+}
+
 .y-1 {
     display: flex;
     flex-direction: column;
@@ -530,6 +536,10 @@
 @media (max-width: 767px) {
     .y-2 {
         width: 100%;
+    }
+
+    .top-right-bottom-layer, .top-left-bottom-layer {
+        margin-bottom: 0;
     }
 }
 
@@ -576,7 +586,7 @@
 
 @media (max-width: 767px) {
     .middle-bottom-layer {
-        display:none
+        order: -1;
     }
 }
 
@@ -673,6 +683,17 @@
     padding: 16px 100px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .container-7 .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%!important;
+        padding-right: 16px!important;
+        padding-left: 16px!important
+    }
 }
 
 .container-7 .right-card {
