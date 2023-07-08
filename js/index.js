@@ -10,5 +10,14 @@ window.addEventListener('scroll', function() {
       element.style.backgroundColor = "#FBDC00"; 
       element.style.boxShadow = "none";
     }
-  });
+});
+
+
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.navigate');
+
+burger.addEventListener('click', () => {
+  navLinks.classList.toggle('nav-active');
+  burger.classList.toggle('burger-active');
+});
   
