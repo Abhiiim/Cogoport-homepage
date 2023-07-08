@@ -1,6 +1,23 @@
-/* * {
-    box-sizing: border-box;
-} */
+
+:root {
+    --color-primary: #ee3425;
+    --color-primary-1: #ee3425;
+    --color-primary-2: #ee3425;
+    --color-secondary: #fbdc00;
+    --color-secondary-1: #ebbe00;
+    --color-secondary-5: #fff;
+    --font-color: #434343;
+    --font-color-heading: #000;
+    --font-color-link: var(--color-primary);
+    --font-family: "PT Sans",sans-serif;
+    --font-family-heading: "Ubuntu",sans-serif;
+    --font-size-xl: 18px;
+    --font-size-lg: 16px;
+    --font-size-md: 14px;
+    --font-size-sm: 12px;
+    --font-size-xs: 10px;
+    --line-height: 1.5;
+}
 
 html, body {
     margin: 0;
@@ -8,18 +25,41 @@ html, body {
     font-family: "PT Sans",sans-serif;
 }
 
+h1 {
+    font-size: 40px;
+    line-height: 1.2
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size:24px
+    }
+}
+
 h2 {
     font-size: 40px;
-    line-height: 1.2; 
+    line-height: 1.2
+}
+
+@media (max-width: 767px) {
+    h2 {
+        font-size:24px
+    }
 }
 
 h3 {
     font-size: 28px;
-    line-height: 1.2;
+    line-height: 1.2
+}
+
+@media (max-width: 767px) {
+    h3 {
+        font-size:20px
+    }
 }
 
 p {
-    font-size: 16px;
+    font-size: 16px
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -34,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 button {
     font-family: "PT Sans",sans-serif;
-    font-size: 14px;
+    font-size: 14px!important;
     font-weight: 700!important;
 }
 
@@ -47,7 +87,7 @@ button {
     margin-right: auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .card {
         width: 100%;
         flex-direction: column;

@@ -132,26 +132,34 @@
 }
 
 .container-img {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    height: 393px;
-    padding-top: 56px;
-    z-index: -2;
+    padding-top: 57px;
+    margin-top: -57px;
+    background: url(https://cdn.cogoport.io/cms-prod/cogo_public/vault/original/home-banner-background-1.webp);
+    background-color: var(--color-secondary);
+    background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
 }
 
+@media (max-width: 767px) {
+    .container-img {
+        width:100%;
+        background-size: auto auto;
+        background-size: initial
+    }
+}
+
 .header {
     margin-top: 56px;
-    height: 363px;
 }
 
 .header-video {
     display: flex;
     flex: 1 1;
     height: 400px;
+    margin-bottom: -39px;
 }
 
 @media screen and (max-width: 767px) {
@@ -224,8 +232,11 @@
 } */
   
 .service {
-    height: 203px;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
+    padding: 50px 0;
+    flex-wrap: wrap;
 }
 
 .service-card {
@@ -234,8 +245,6 @@
 
 .service-card h2 {
     color: #ee3425;
-    font-size: 40px;
-    line-height: 1.2;
     margin-top: 0;
     margin-bottom: 5px;
 }
@@ -280,8 +289,6 @@
 }
 
 .products h3 {
-    font-size: 28px;
-    line-height: 1.2;
     width: 100%;
     text-align: center;
     margin: 0;
@@ -397,8 +404,6 @@
 
 .container-3 h3 {
     text-align: center;
-    font-size: 28px;
-    line-height: 1.2;
 }
 
 .prt-animate {
@@ -469,7 +474,6 @@
 
 .x-1 h3 {
     margin: 0 0 10px 0;
-    font-size: 28px;
     font-weight: 700;
 }
 
@@ -603,8 +607,8 @@
 }
 
 .mid-btn-2 {
-    background: #e5dfdf!important;
-    border: grey!important;
+    background: #e5dfdf;
+    border: grey;
     display: flex;
     justify-content: center;
     align-items: center;
