@@ -49,6 +49,7 @@ button {
 
 @media (max-width: 767px) {
     .card {
+        width: 100%;
         flex-direction: column;
     }
 }

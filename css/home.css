@@ -709,6 +709,12 @@
     display: flex;
 }
 
+@media (max-width: 767px) {
+    .blogs {
+        flex-direction: column;
+    }
+}
+
 .blog-card {
     display: flex;
     flex-direction: column;
@@ -720,6 +726,12 @@
     cursor: pointer;
     border-radius: 8px;
     box-shadow: 0 3px 6px hsla(0,0%,79%,.5);
+}
+
+@media (max-width: 767px) {
+    .blog-card {
+        width: 90%;
+    }
 }
 
 .blog-img {
