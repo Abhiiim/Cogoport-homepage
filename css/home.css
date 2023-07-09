@@ -169,6 +169,7 @@
 @media screen and (max-width: 767px) {
     .left-header {
         order: 1;
+        width: 100%;
     }
 
     .video-1 {
@@ -205,6 +206,17 @@
     height: 40px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 767px) {
+    .single-line-form {
+        width: 100%;
+    }
+
+    .single-line-form input {
+        width: 100%;
+        padding: 0;
+    }
+}
   
 .input-container {
     display: flex;
@@ -240,6 +252,13 @@
 /* .get-started-button:hover {
     background-color: #128C7E;
 } */
+
+@media screen and (max-width: 767px) {
+    .get-started-button {
+        width: 100%;
+        padding: 0;
+    }
+}
   
 .service {
     width: 100%;
@@ -575,10 +594,6 @@
         width: 100%;
         margin-bottom: 20px;
     }
-
-    .top-right-bottom-layer, .top-left-bottom-layer {
-        margin-bottom: 0;
-    }
 }
 
 .stage {
@@ -912,7 +927,9 @@
 
 @media (max-width: 767px) {
     .blog-card {
-        width: 90%;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 40px;
     }
 }
 
@@ -1037,7 +1054,6 @@
 
 .c-3 input {
     width: 250px;
-    height: 16.8px;
     padding: 10px;
     border: 2px solid transparent;
     border-top-left-radius: 10px;
@@ -1075,8 +1091,11 @@
         width: 100%;
         padding: 8.5px
     }
-}
 
+    .c-3 form {
+        margin-bottom: 20px;
+    }
+}
 
 
 /* Footer 1 */
@@ -1102,7 +1121,7 @@
 .d-2 {
     display: flex;
     flex-direction: column;
-    margin: 8px 0;
+    margin: 16px 0;
 }
 
 .d-3 {
@@ -1128,6 +1147,62 @@
 
 .d-5 {
     visibility: hidden;
+}
+
+.contact-us {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-1 {
+        flex-direction: column;
+        padding: 0 16px;
+        width: 100%;
+    }
+
+    .d-1 {
+        background-color: #ffec64;
+    }
+
+    .d-2 span {
+        margin: 0;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .d-2 h4 {
+        color: #ee3425;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    .d-3 {
+        margin-top: 0;
+        text-decoration: none;
+        padding-top: 16px;
+        color: #000;
+        font-family: "PT Sans",sans-serif;
+        height: 56px;
+        display: flex;
+        align-items: start;
+        background-color: #fbdc00;
+    }
+
+    .d-4 {
+        font-size: 16px;
+    }
+
+    .d-5 {
+        display: none;
+    }
+
+    .d-6, .d-7, .d-8, .d-8, .d-9, .d-10 {
+        display: none;
+    }
+
+    .contact-us {
+        display: block;
+    }
 }
 
 
