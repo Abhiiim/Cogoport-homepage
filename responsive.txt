@@ -1,0 +1,7 @@
+Section where i face dificulty wahile making resposive:
+
+1. Navigation Bar: This section is responsive but I am not able to add a new page for opening navigation menu when clicked on burger icon. When we click on the burger icon navigation menu appeared but it is fixed on top which doesn't look good.
+
+2. Height of the video image in "grow faster with cogoport section" is not same for smaller width devices.
+
+3. Buttons in footer section is also not similar for smaller width devices.
