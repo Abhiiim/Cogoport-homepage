@@ -90,7 +90,7 @@ button {
     margin-right: auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
     .card {
         width: 100%;
         flex-direction: column;
@@ -121,5 +121,20 @@ button {
 .right-card {
     flex: 1 1;
     padding-top: 37px;
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    .container, .container-2, .container-3 {
+        width: 1200px;
+    }
+    .container-4, .container-5, .container-6 {
+        width: 1200px;
+    }
+    .container-7, .container-8, .container-9, .container-10 {
+        width: 1200px;
+    }
+    .footer-1, .footer-2, .footer-3 {
+        width: 1200px;
+    }
 }
 

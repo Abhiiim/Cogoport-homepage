@@ -395,6 +395,11 @@
 }
 
 @media screen and (max-width: 767px) {
+    .title-text {
+        width: 100%;
+        margin-right: 0;
+    }
+
     .title-text h4 {
         font-size: 16px;
     }
@@ -609,7 +614,7 @@
 }
 
 .y-2 {
-    width: 268px;
+    width: 300px;
     padding: 16px;
     border-radius: 10px;
     box-shadow: 0 1px 6px rgba(169,188,218,.65);
