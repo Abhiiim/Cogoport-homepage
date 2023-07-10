@@ -15,10 +15,14 @@ window.addEventListener('scroll', function() {
 
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.navigate');
+const login = document.querySelector('.login');
+const navBar = document.querySelector('.nav-bar');
 
 burger.addEventListener('click', () => {
   navLinks.classList.toggle('nav-active');
+  login.classList.toggle('nav-active');
   burger.classList.toggle('burger-active');
+  navBar.classList.toggle("nav-bar-collapse");
 });
   
 

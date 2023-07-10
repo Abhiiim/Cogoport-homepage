@@ -20,6 +20,12 @@
     .nav-bar {
         width: 100%;
     }
+
+    .nav-bar-collapse {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
 }
 
 #nav-bar {
@@ -28,26 +34,31 @@
 }
 
 .logo {
-    flex-grow: 3;
-    text-align: end;
-    /* height: 56px; */
+    display: block;
+    flex-shrink: 0;
+    margin-left: auto;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
     .logo {
-        flex-grow: 0;
+        margin-left: 10px;
     }
 }
 
 .navigate {
-    flex-grow: 7;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-list {
     display: flex;
-    justify-content: space-around;
-    text-align: end;
-    margin: 0 110px;
-    font-weight: 500;
-    font-family: "Ubuntu",sans-serif;
-    color: #000;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-list div {
+    padding-left: 40px;
     font-size: 14px;
 }
 
@@ -58,10 +69,10 @@
 }
   
 .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    margin: 2px;
 }
 
 @media screen and (max-width: 667px) {
@@ -69,20 +80,25 @@
       display: none;
       flex-direction: column;
       align-items: center;
-      /* width: 100%; */
-      flex-grow: 0;
       margin: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
     }
 
     .login {
         display: none;
         align-items: center;
-        /* width: 100%; */
-        flex-grow: 0;
         margin: 0;
     }
 
     .navigate.nav-active {
+        display: flex;
+        margin-top: 170px;
+    }
+
+    .login.nav-active {
         display: flex;
     }
   
@@ -100,15 +116,18 @@
   }
 
 .login {
-    flex-grow: 4;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    font-family: var(--font-family-heading);
+    list-style-type: none;
     padding-left: 40px;
 }
 
 @media screen and (max-width: 767px) {
     .login {
-        flex-grow: 0;
+        display: none;
     }
 }
 
@@ -265,7 +284,7 @@
     display: flex;
     justify-content: space-between;
     padding: 50px 0;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 
 .service-card {
@@ -287,7 +306,14 @@
     .service {
         padding: 0;
         width: 100%;
-        justify-content: center;
+    }
+
+    .service-card {
+        width: 50%;
+    }
+
+    .service-card h4 {
+        font-size: 14px;
     }
 }
 
